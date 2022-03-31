@@ -16,9 +16,11 @@ function App() {
 
     return (
         <div style={{ width: "200px", margin: "auto" }}>
-            {pokemon.length > 0 && pokemon.map((poke, index) => {
-                return (<div key={index}>{poke.name}</div>)
+          <ul>
+            {pokemon.map((poke, index) => {
+                return (<li key={index}>{poke.name}</li>)
             })}
+          </ul>
         </div>
     ); 
 }
